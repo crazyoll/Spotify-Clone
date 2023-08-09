@@ -1,0 +1,58 @@
+@import "../../styles.scss";
+
+.LeftMenu{
+    width: 20em;
+    float: left;
+    margin-right: 0.5em;
+}
+.Container {
+    margin-bottom: 0.5em;
+}
+
+.Size {
+    min-height: 64.8vh;
+}
+
+.HomeMenuElement {
+    display: block;
+    padding: 0 0 1em 0;
+}
+
+.HomeMenuElement img {
+    display: inline;
+    padding: 0 1em 0 0;
+    width: 1.3em;
+    height: 1.2em;
+}
+
+.HomeMenuElement p {
+    color: #c5c6c7;
+    display: inline;
+    font-size: 1.3em;
+}
+
+.HomeMenuElement a {
+    //wtf? how #c5c6c7 ended up with this shit?
+    @include GreyTransformation;
+    text-decoration: none;
+}
+
+.HomeMenuElement > a:hover {
+    //wtf? how #c5c6c7 ended up with this shit?
+    @include LightGreyTransformation;
+}
+
+.line {
+    border-color: #c5c6c7;
+}
+
+.SmallerHomeFont {
+    font-size: 80%;
+    margin: 0.1em 0em 0.1em 1em;
+}
+.addSection img {
+    width: 18em;
+    height: 15em;
+    position: fixed;
+    bottom: 5.5em;
+}

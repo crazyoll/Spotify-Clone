@@ -1,0 +1,34 @@
+<div class="Container Size">
+    <div class="CurrentSongSection">
+        <div class="SongDetailsSection">
+            <div class="SongTitle">Young as the Morning old as the Sea</div>
+            <div class="SongAuthor">Passenger</div>
+        </div>
+        <div class="LikeButton"> <img [src]="likeButton"></div>
+    </div>
+    <div class="MusicPlayerSection">
+        <div class="ControlPanel">
+            <div class="BigButton"><img [src]="shuffleButton"></div>
+            <div class="BigButton"><img [src]="previousSongButton"></div>
+            <div class="BigButton GreenBackgroundColor"><img [src]="playStopButton"></div>
+            <div class="BigButton"><img [src]="nextSongButton"></div>
+            <div class="BigButton"><img [src]="loopSongButton"></div>
+        </div>
+        <div class="ControlPanelBar">
+            <div class="CurrentTimeOfSong">0:03</div>
+            <div class="ProgressBar">
+                <div class="ProgressBarDot"></div>
+            </div>
+            <div class="SongDuration">3:26</div>
+        </div>
+    </div>
+    <div class="VolumeControlSection">
+        <div class="BigButton"><img [src]="karaokeButton"></div>
+        <div class="BigButton"><img [src]="queueButton"></div>
+        <div class="BigButton"><img [src]="listenFromAnotherDeviceButton"></div>
+        <div class="BigButton"><img [src]="muteButton"></div>
+        <div class="VolumeBarContainer">
+            <div class="VolumeBar"></div>
+        </div>
+    </div>
+</div>

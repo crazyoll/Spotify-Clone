@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+body, html {
+    background-color: #484949;
+    height: 100%;
+    margin: 0;
+    font-family: "Gotham SSm A", "Gotham SSm B", "Helvatica Neue";
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.Container {
+    background-color: black;
+    padding: 1em;
+    margin: 0em;
+    border-radius: 1em;
+}
+
+@mixin GreyTransformation{
+    filter: invert(0.5) sepia(70) saturate(0) hue-rotate(0);
+}
+
+@mixin LightGreyTransformation {
+    filter: invert(0.5) sepia(0) saturate(0) hue-rotate(0);
+}
