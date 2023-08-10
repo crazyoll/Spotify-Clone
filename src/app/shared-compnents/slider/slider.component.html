@@ -1,0 +1,6 @@
+<div class="slider-container">
+    <div>{{currentValue}}</div>
+    <input type="range" [min]="minValue" [max]="maxValue" [value]="currentValue" [step]="1"
+        (input)="changeValue($event)">
+    <div>{{maxValue}}</div>
+</div>

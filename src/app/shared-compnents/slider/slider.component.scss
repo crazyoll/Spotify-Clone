@@ -1,0 +1,18 @@
+@import "/src/styles.scss";
+
+.slider-container {
+
+}
+
+.slider-container > input[type='range'] {
+  background-color: black;
+}
+input[type='range'] {
+  background: green;
+  -webkit-appearance: none;
+}
+
+
+.slider-containerr:hover {
+    background-color: black;
+}
