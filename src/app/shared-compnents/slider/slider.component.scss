@@ -4,15 +4,35 @@
 
 }
 
-.slider-container > input[type='range'] {
-  background-color: black;
-}
-input[type='range'] {
-  background: green;
+.slider-container > input[type=range] {
+  border-radius: 50%;
   -webkit-appearance: none;
-}
+  /* Style the filled bar */
+  &::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    background: $gray-text; /* Color of the filled bar */
+  }
+  &::-webkit-slider-runnable-track:hover {
+    -webkit-appearance: none;
+    background: $white; /* Color of the filled bar */
+    cursor: pointer;
+  }
 
+  /* Style the thumb */
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: black; /* Color of the thumb */
+    width: 1em;
+    height: 1em;
+    cursor: pointer;
+    border-radius: 50%;
+  }
 
-.slider-containerr:hover {
-    background-color: black;
+  /* Hover effect on the thumb */
+  &::-webkit-slider-thumb:hover {
+    -webkit-appearance: none;
+    background: red; /* New color on hover */
+  }
+
+  
 }
