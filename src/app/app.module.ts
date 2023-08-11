@@ -7,6 +7,7 @@ import { LeftMenuComponent } from './left-menu/left-menu.component';
 import { PlayMusicMenuComponent } from './play-music-menu/play-music-menu.component';
 import { TopMenuComponent } from './top-menu/top-menu.component';
 import { ListMenuComponent } from './list-menu/list-menu.component';
+import { SliderComponent } from './shared-compnents/slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ListMenuComponent } from './list-menu/list-menu.component';
     LeftMenuComponent,
     PlayMusicMenuComponent,
     TopMenuComponent,
-    ListMenuComponent
+    ListMenuComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,

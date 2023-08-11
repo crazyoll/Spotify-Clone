@@ -109,16 +109,6 @@
 
 .VolumeBarContainer {
     width: 5em;
-    height: 0.5em;
-    background-color: #ddd;
-    border-radius: 4px;
     float: right;
-    margin-top: 1em;
-}
-
-.VolumeBar {
-  width: 50%; /* Adjust the width to represent the progress */
-  height: 100%;
-  background-color: #1db954;
-  border-radius: 4px;
+    margin-top: 0.5em;
 }

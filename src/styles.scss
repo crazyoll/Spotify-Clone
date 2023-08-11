@@ -1,6 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+// Global colour palette
+$gray-text: #484949;
+$gray-ligh: #9b9b9b;
+$green: #1db954;
+$white: #ffffff;
+
 body, html {
-    background-color: #484949;
+    //background-color: #484949;
+    background-color: black;
     height: 100%;
     margin: 0;
     font-family: "Gotham SSm A", "Gotham SSm B", "Helvatica Neue";
