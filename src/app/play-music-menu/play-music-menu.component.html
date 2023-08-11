@@ -12,15 +12,9 @@
             <div class="BigButton"><img [src]="previousSongButton"></div>
             <div class="BigButton GreenBackgroundColor"><img [src]="playStopButton"></div>
             <div class="BigButton"><img [src]="nextSongButton"></div>
-            <div class="BigButton"><img [src]="loopSongButton"></div>
+            <div class="BigButton"ControlPanelBar><img [src]="loopSongButton"></div>
         </div>
-        <div class="ControlPanelBar">
-            <div class="CurrentTimeOfSong">0:03</div>
-            <div class="ProgressBar">
-                <div class="ProgressBarDot"></div>
-            </div>
-            <div class="SongDuration">3:26</div>
-        </div>
+        <app-progress-bar></app-progress-bar>
     </div>
     <div class="VolumeControlSection">
         <div class="BigButton"><img [src]="karaokeButton"></div>
