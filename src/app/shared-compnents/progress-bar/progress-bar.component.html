@@ -1,0 +1,6 @@
+<div class="container-progress-bar">
+    <div>{{currentSongTimeString}}</div>
+    <app-slider [minValue]="0" [maxValue]="songDuration" [currentValue]="currentSongTime"
+        (changeCurrentValue)="setSongCurrentTime ($event)"></app-slider>
+    <div>{{songDurationString}}</div>
+</div>
