@@ -57,17 +57,7 @@
     margin: 0.5em;
     @include GreyTransformation;
 }
-.GreenBackgroundColor img {
-    width: 1em;
-    height: 1em;
-    margin: 0.5em;
-    filter: invert(0);
-}
-.GreenBackgroundColor {
-    background-color: #23d86d;
-    border-radius: 50%;
-    
-}
+
 
 .CurrentTimeOfSong, .SongDuration {
     color: white;

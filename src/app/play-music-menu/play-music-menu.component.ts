@@ -9,7 +9,7 @@ export class PlayMusicMenuComponent {
   protected readonly likeButton = "assets/FiiledLike.svg";
   protected readonly shuffleButton = "assets/Shuffle.svg";
   protected readonly previousSongButton = "assets/Previous.svg";
-  protected readonly playStopButton = "assets/Pause.svg";
+
   protected readonly nextSongButton = "assets/Next.svg";
   protected readonly loopSongButton = "assets/Repeat.svg";
   protected readonly songProgressBar = "assets/.svg";
