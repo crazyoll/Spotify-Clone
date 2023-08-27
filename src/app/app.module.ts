@@ -3,13 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LeftMenuComponent } from './left-menu/left-menu.component';
-import { PlayMusicMenuComponent } from './play-music-menu/play-music-menu.component';
-import { TopMenuComponent } from './top-menu/top-menu.component';
-import { ListMenuComponent } from './list-menu/list-menu.component';
-import { SliderComponent } from './shared-compnents/slider/slider.component';
-import { ProgressBarComponent } from './shared-compnents/progress-bar/progress-bar.component';
-import { PlayPauseButtonComponent } from './shared-compnents/play-pause-button/play-pause-button.component';
+import { LeftMenuComponent } from './components/left-menu/left-menu.component';
+import { PlayMusicMenuComponent } from './components/play-music-menu/play-music-menu.component';
+import { TopMenuComponent } from './components/top-menu/top-menu.component';
+import { ListMenuComponent } from './components/list-menu/list-menu.component';
+import { SliderComponent } from './components/shared-compnents/slider/slider.component';
+import { ProgressBarComponent } from './components/shared-compnents/progress-bar/progress-bar.component';
+import { PlayPauseButtonComponent } from './components/shared-compnents/play-pause-button/play-pause-button.component';
 
 @NgModule({
   declarations: [
