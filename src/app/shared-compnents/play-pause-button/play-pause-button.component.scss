@@ -1,23 +1,26 @@
 @import "../../../styles.scss";
 
-.GreenBackgroundColor img {
-    width: 1em;
-    height: 1em;
-    margin: 0.5em;
-    filter: invert(0);
+.container {
+    
+    & > :hover{
+        scale: 120%
+    }
 }
-.GreenBackgroundColor {
+
+.playButton {
     background-color: #23d86d;
     border-radius: 50%;
-}
-.BigButton {
     width: 2.5em;
     height: 2.5em;
     float: left;
-    margin: 0 0.25em 1em 0.25em;
-}
-.BigButton img {
-    width: 1.5em;
-    height: 1.5em;
-    margin: 0.5em;
+    margin: 0em 0.25em 0em 0.25em;
+
+    & > img {
+        transform: scale(0.8);
+        margin: -0.30em;
+
+        & > :hover {
+            transform: scale(1.1);
+        }
+    }
 }

@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./play-pause-button.component.scss']
 })
 export class PlayPauseButtonComponent {
-  protected readonly playStopButton = "assets/Pause.svg";
+  
+  private readonly stopButtonSprite = "assets/Pause.svg";
+  private readonly playButtonSprite = "assets/Play.svg";
+
+  protected isMusicPlaying: boolean = false;
+  protected playStopButton = this.stopButtonSprite;
+
+
+  PlayMusic() {
+    if (this.isMusicPlaying) { 
+      this.playStopButton = this.stopButtonSprite;
+      this.isMusicPlaying = false;
+    }
+    else {
+      this.playStopButton = this.playButtonSprite;
+      this.isMusicPlaying = true;
+    }
+  }
 }
