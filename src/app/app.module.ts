@@ -9,6 +9,7 @@ import { TopMenuComponent } from './top-menu/top-menu.component';
 import { ListMenuComponent } from './list-menu/list-menu.component';
 import { SliderComponent } from './shared-compnents/slider/slider.component';
 import { ProgressBarComponent } from './shared-compnents/progress-bar/progress-bar.component';
+import { PlayPauseButtonComponent } from './shared-compnents/play-pause-button/play-pause-button.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ProgressBarComponent } from './shared-compnents/progress-bar/progress-b
     TopMenuComponent,
     ListMenuComponent,
     SliderComponent,
-    ProgressBarComponent
+    ProgressBarComponent,
+    PlayPauseButtonComponent
   ],
   imports: [
     BrowserModule,
