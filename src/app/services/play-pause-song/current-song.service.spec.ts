@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { PlayPauseSongService } from './play-pause-song.service';
+import { PlayPauseSongService } from './current-song.service';
 
 describe('PlayPauseSongService', () => {
   let service: PlayPauseSongService;
