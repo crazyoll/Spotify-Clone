@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-play-pause-button',
@@ -13,6 +13,7 @@ export class PlayPauseButtonComponent {
   protected isMusicPlaying: boolean = false;
   protected playStopButton = this.stopButtonSprite;
 
+  @Output() sendSongStateChange = new  EventEmitter<boolean>();
 
   PlayMusic() {
     if (this.isMusicPlaying) { 
@@ -23,5 +24,6 @@ export class PlayPauseButtonComponent {
       this.playStopButton = this.playButtonSprite;
       this.isMusicPlaying = true;
     }
+    this.sendSongStateChange.emit(this.isMusicPlaying);
   }
 }
