@@ -1,4 +1,5 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component } from '@angular/core';
+import { PlayPauseSongService } from 'src/app/services/play-pause-song/current-song.service';
 
 @Component({
   selector: 'app-play-pause-button',
@@ -6,24 +7,32 @@ import { Component, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./play-pause-button.component.scss']
 })
 export class PlayPauseButtonComponent {
-  
+
   private readonly stopButtonSprite = "assets/Pause.svg";
   private readonly playButtonSprite = "assets/Play.svg";
 
   protected isMusicPlaying: boolean = false;
-  protected playStopButton = this.stopButtonSprite;
+  protected playStopButton = this.playButtonSprite;
 
-  @Output() sendSongStateChange = new  EventEmitter<boolean>();
+  constructor(private playPauseSongService: PlayPauseSongService) { }
 
-  PlayMusic() {
-    if (this.isMusicPlaying) { 
-      this.playStopButton = this.stopButtonSprite;
-      this.isMusicPlaying = false;
+  SongControl() {
+    if (this.isMusicPlaying) {
+      this.StopMusic();
     }
     else {
-      this.playStopButton = this.playButtonSprite;
-      this.isMusicPlaying = true;
+      this.PlayMusic();
     }
-    this.sendSongStateChange.emit(this.isMusicPlaying);
+    this.playPauseSongService.set(this.isMusicPlaying);
+  }
+
+  StopMusic() {
+    this.playStopButton = this.playButtonSprite;
+    this.isMusicPlaying = false;
+  }
+
+  PlayMusic() {
+    this.playStopButton = this.stopButtonSprite;
+    this.isMusicPlaying = true;
   }
 }

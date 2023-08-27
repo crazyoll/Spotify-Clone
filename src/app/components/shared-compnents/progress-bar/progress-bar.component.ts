@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { PlayPauseSongService } from 'src/app/services/play-pause-song/current-song.service';
 
 @Component({
   selector: 'app-progress-bar',
@@ -8,14 +9,21 @@ import { Component, Input } from '@angular/core';
 export class ProgressBarComponent {
   @Input() songDuration: number = 206;
   @Input() currentSongTime: number = 0;
-  @Input() isTimerRunning: boolean = true;
+  @Input() isTimerRunning: boolean = false;
+  
 
   protected songDurationString!: string;
   protected currentSongTimeString: string = "0:00";
 
-  constructor() {
+  constructor(private playPauseSongService:PlayPauseSongService) {
     setInterval(() => this.updateSongCurrentTime(), 1000);
     this.songDurationString = this.formatTime(this.songDuration);
+  }
+
+  ngOnInit(){
+    this.playPauseSongService.get().subscribe(data => {
+      this.isTimerRunning = data;
+    });
   }
 
   updateSongCurrentTime() {
