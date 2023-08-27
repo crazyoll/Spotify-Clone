@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PlayPauseSongService } from 'src/app/services/play-pause-song/current-song.service';
+import { PlayPauseSongService } from 'src/app/services/current-song/current-song.service';
 
 @Component({
   selector: 'app-play-pause-button',
