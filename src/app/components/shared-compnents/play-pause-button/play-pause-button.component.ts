@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { PlayPauseSongService } from 'src/app/services/current-song/current-song.service';
+import { SpotifyService } from 'src/app/services/spotify/spotify.service';
 
 @Component({
   selector: 'app-play-pause-button',
@@ -14,7 +15,7 @@ export class PlayPauseButtonComponent {
   protected isMusicPlaying: boolean = false;
   protected playStopButton = this.playButtonSprite;
 
-  constructor(private playPauseSongService: PlayPauseSongService) { }
+  constructor(private playPauseSongService: PlayPauseSongService, private spotify:SpotifyService ) { }
 
   SongControl() {
     if (this.isMusicPlaying) {
