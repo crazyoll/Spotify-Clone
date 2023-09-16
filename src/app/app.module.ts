@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,7 @@ import { ListMenuComponent } from './components/list-menu/list-menu.component';
 import { SliderComponent } from './components/shared-compnents/slider/slider.component';
 import { ProgressBarComponent } from './components/shared-compnents/progress-bar/progress-bar.component';
 import { PlayPauseButtonComponent } from './components/shared-compnents/play-pause-button/play-pause-button.component';
+import { LoginComponent } from './components/top-menu/login/login.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { PlayPauseButtonComponent } from './components/shared-compnents/play-pau
     ListMenuComponent,
     SliderComponent,
     ProgressBarComponent,
-    PlayPauseButtonComponent
+    PlayPauseButtonComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
